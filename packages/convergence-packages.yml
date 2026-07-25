@@ -1,0 +1,36 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/convergence-ai
+notes: >-
+  Convergence AI ships no hosted client SDK on a public package registry. Its
+  first-party open-source surface is the proxy-lite Python library/CLI (installed
+  from source) plus the open-weights proxy-lite-3b model on Hugging Face. The
+  PyPI project named "convergence" is unrelated and NOT first-party.
+packages:
+  - language: python
+    registry: github
+    name: proxy-lite
+    url: https://github.com/convergence-ai/proxy-lite
+    install: git clone https://github.com/convergence-ai/proxy-lite && uv sync && uv pip install -e .
+    official: true
+    license: CC-BY-NC-4.0
+    description: >-
+      Mini, open-weights version of the Proxy web-browsing agent — a Python
+      library + CLI (Runner/RunnerConfig) that drives an OpenAI-compatible
+      vision-language model over Playwright browser automation.
+  - language: model
+    registry: huggingface
+    name: convergence-ai/proxy-lite-3b
+    url: https://huggingface.co/convergence-ai/proxy-lite-3b
+    install: vllm serve convergence-ai/proxy-lite-3b
+    official: true
+    description: >-
+      3-billion-parameter vision-language model (based on Qwen-2.5-VL) that powers
+      Proxy Lite; served via vLLM behind an OpenAI-compatible chat-completions API.
+  - language: python
+    registry: github
+    name: lm2
+    url: https://github.com/convergence-ai/lm2
+    install: git clone https://github.com/convergence-ai/lm2
+    official: true
+    description: Official reference implementation for the LM2 (Large Memory Model) paper.

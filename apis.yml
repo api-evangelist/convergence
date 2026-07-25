@@ -1,20 +1,48 @@
 aid: convergence
 name: convergence
-description: convergence is a company surfaced as a portfolio company of balderton-capital and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Convergence AI was a London-based artificial-intelligence startup founded in 2024 by
+  Marvin Purtorab (CEO) and Andy Toulis (CTO) building Proxy, a personal AI agent designed
+  to complete open-ended administrative and web-browsing tasks across domains. Its approach
+  centered on long-term memory and continual learning via a new class of models it called
+  Large Meta Learning Models (LMLM). Convergence raised a $12M pre-seed led by Balderton
+  Capital with participation from Salesforce Ventures and Shopify Ventures, and was acquired
+  by Salesforce in May 2025 to strengthen Agentforce. Its lasting public surface is the
+  convergence-ai GitHub organization, which open-sourced proxy-lite (a mini open-weights
+  web-browsing agent), the proxy-lite-3b vision-language model on Hugging Face, the LM2
+  memory-model paper repo, and the WebGames agent benchmark.
 url: https://raw.githubusercontent.com/api-evangelist/convergence/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/168867344?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - balderton-capital
+x-acquired-by: salesforce
+x-acquired-date: '2025-05-15'
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Artificial Intelligence
+- AI Agents
+- Machine Learning
+- Web Automation
+- Open Weights
+- Developer Tools
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +50,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/convergence-domain-security.yml
 - type: Website
   url: https://convergence.ai/
+- type: GitHubOrganization
+  url: https://github.com/convergence-ai
+- type: Documentation
+  url: https://github.com/convergence-ai/proxy-lite
+- type: Packages
+  url: packages/convergence-packages.yml
+- type: SDKs
+  url: packages/convergence-packages.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
