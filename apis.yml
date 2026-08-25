@@ -1,16 +1,13 @@
 aid: convergence
 name: convergence
-description: >-
-  Convergence AI was a London-based artificial-intelligence startup founded in 2024 by
-  Marvin Purtorab (CEO) and Andy Toulis (CTO) building Proxy, a personal AI agent designed
-  to complete open-ended administrative and web-browsing tasks across domains. Its approach
-  centered on long-term memory and continual learning via a new class of models it called
-  Large Meta Learning Models (LMLM). Convergence raised a $12M pre-seed led by Balderton
-  Capital with participation from Salesforce Ventures and Shopify Ventures, and was acquired
-  by Salesforce in May 2025 to strengthen Agentforce. Its lasting public surface is the
-  convergence-ai GitHub organization, which open-sourced proxy-lite (a mini open-weights
-  web-browsing agent), the proxy-lite-3b vision-language model on Hugging Face, the LM2
-  memory-model paper repo, and the WebGames agent benchmark.
+description: Convergence AI was a London-based artificial-intelligence startup founded in 2024 by Marvin Purtorab
+  (CEO) and Andy Toulis (CTO) building Proxy, a personal AI agent designed to complete open-ended administrative
+  and web-browsing tasks across domains. Its approach centered on long-term memory and continual learning via a
+  new class of models it called Large Meta Learning Models (LMLM). Convergence raised a $12M pre-seed led by Balderton
+  Capital with participation from Salesforce Ventures and Shopify Ventures, and was acquired by Salesforce in May
+  2025 to strengthen Agentforce. Its lasting public surface is the convergence-ai GitHub organization, which open-sourced
+  proxy-lite (a mini open-weights web-browsing agent), the proxy-lite-3b vision-language model on Hugging Face,
+  the LM2 memory-model paper repo, and the WebGames agent benchmark.
 url: https://raw.githubusercontent.com/api-evangelist/convergence/refs/heads/main/apis.yml
 accessModel:
   pricing: unknown
@@ -34,7 +31,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-08-21'
 tags:
 - Company
 - Artificial Intelligence
@@ -58,6 +55,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/salesforce/
+  name: Salesforce
+  x-relationship: acquisition
+  x-generated-by: salesforce-family:2026-08-21
+  x-acquired: 2025
 - type: DomainSecurity
   url: security/convergence-domain-security.yml
 - type: Website
@@ -75,3 +78,6 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-parent: salesforce
+x-relationship: acquisition
+x-acquired: 2025
