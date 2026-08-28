@@ -9,6 +9,17 @@ description: Convergence AI was a London-based artificial-intelligence startup f
   proxy-lite (a mini open-weights web-browsing agent), the proxy-lite-3b vision-language model on Hugging Face,
   the LM2 memory-model paper repo, and the WebGames agent benchmark.
 url: https://raw.githubusercontent.com/api-evangelist/convergence/refs/heads/main/apis.yml
+deliveryModel:
+  model: library
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Library · distributed through package registries, no callable service
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
