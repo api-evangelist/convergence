@@ -47,7 +47,7 @@ tags:
 - Company
 - Artificial Intelligence
 - AI Agents
-- Machine-Learning
+- Machine Learning
 - Web Automation
 - Open Weights
 - Developer Tools
@@ -59,6 +59,7 @@ tags_raw:
 - Web Automation
 - Open Weights
 - Developer Tools
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
